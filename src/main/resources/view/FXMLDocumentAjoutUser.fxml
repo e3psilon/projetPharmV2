@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneCreate" prefHeight="653.0" prefWidth="647.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetPharmV2.controller.FXMLDocumentAdminControllerAddUserModal">
+   <children>
+      <VBox layoutX="54.0" layoutY="69.0" prefHeight="533.0" prefWidth="525.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="54.0" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="69.0">
+         <children>
+            <Separator prefHeight="0.0" prefWidth="429.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin></Separator>
+            <JFXTextField fx:id="userNameField" focusColor="#4864b9" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="33.0" prefWidth="400.0" promptText="Nom utilisateur*" unFocusColor="#b7b8bb">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="nomUserField" focusColor="#4864b9" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="35.0" prefWidth="400.0" promptText="Nom *" unFocusColor="#b7b8bb">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="prenomUserField" focusColor="#4864b9" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="25.0" prefWidth="400.0" promptText="prénom*" unFocusColor="#b7b8bb">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="telephoneUserField" focusColor="#4864b9" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="25.0" prefWidth="400.0" promptText="Téléphone" unFocusColor="#b7b8bb">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXPasswordField fx:id="passwordField" focusColor="#4864b9" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="25.0" prefWidth="400.0" promptText="Mot de passe*" unFocusColor="#b7b8bb">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="passwordConfirmationField" focusColor="#4864b9" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="25.0" prefWidth="400.0" promptText="Confirmation Mot de passe*" unFocusColor="#b7b8bb">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXPasswordField>
+            <JFXToggleButton fx:id="activerUserField" onAction="#activerUtilisateur" text="Utilisateur désactivé" textFill="#8a8888" toggleColor="#4864b9" toggleLineColor="#6c87d7">
+               <VBox.margin>
+                  <Insets bottom="50.0" />
+               </VBox.margin></JFXToggleButton>
+            <HBox prefHeight="33.0" prefWidth="505.0">
+               <children>
+                  <JFXButton fx:id="enregister" buttonType="RAISED" onAction="#addUser" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #4864b9;" text="Enregistrer" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="reset" buttonType="RAISED" onAction="#reset" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #4864b9;" text="Reset" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="annuler"  buttonType="RAISED" onAction="#makeRetour" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #4864b9;" text="Annuler" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="100.0" />
+               </VBox.margin>
+            </HBox>
+            <Label text="* Champ Obligatoire" textFill="#b7b8bb">
+               <VBox.margin>
+                  <Insets left="390.0" top="20.0" />
+               </VBox.margin></Label>
+         </children>
+      </VBox>
+      <Pane fx:id="panCreation" layoutX="3.0" prefHeight="72.0" prefWidth="659.0" />
+   </children>
+</AnchorPane>

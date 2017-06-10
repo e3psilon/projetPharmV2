@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="headr" prefHeight="283.0" prefWidth="1059.0" style="-fx-background-color: #4864b9;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetPharmV2.controller.FXMLDocumentModuleListTabeleau">
+   <children>
+      <TextField fx:id="txt_search" layoutX="657.0" layoutY="126.0" prefHeight="27.0" prefWidth="286.0" promptText="Recherche..." />
+      <JFXButton fx:id="listeUtilisateurs" accessibleText="listeUser" layoutX="106.0" layoutY="241.0" onAction="#listeUtilisateurs" prefHeight="41.0" prefWidth="152.0" style="-fx-background-color: #2e53b8;" text="Liste Utilisateurs" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="listeClients" accessibleText="listeClient" layoutX="258.0" layoutY="241.0" onAction="#listeClients" prefHeight="41.0" prefWidth="152.0" style="-fx-background-color: #2e53b8;" text="Liste des clients" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="listesVentes" accessibleText="listeVentes" layoutX="410.0" layoutY="241.0" onAction="#listesVentes" prefHeight="41.0" prefWidth="152.0" style="-fx-background-color: #2e53b8;" text="Liste des ventes" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="caisses" accessibleText="caisse" layoutX="562.0" layoutY="241.0" onAction="#caisses" prefHeight="41.0" prefWidth="152.0" style="-fx-background-color: #2e53b8;" text="caisses" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

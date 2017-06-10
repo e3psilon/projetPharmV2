@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPaneCreationClient" prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetPharmV2.controller.FXMLDocumentAdminControllerAddClient">
+   <children>
+      <VBox layoutX="64.0" layoutY="79.0" prefHeight="533.0" prefWidth="525.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Separator prefHeight="0.0" prefWidth="429.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Separator>
+            <JFXTextField fx:id="numSecuField" focusColor="#4864b9" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="33.0" prefWidth="400.0" promptText="Numero securité social *" unFocusColor="#b7b8bb">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="nomClientField" focusColor="#4864b9" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="35.0" prefWidth="400.0" promptText="Nom client *" unFocusColor="#b7b8bb">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="prenomClientField" focusColor="#4864b9" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="25.0" prefWidth="400.0" promptText="prénom client *" unFocusColor="#b7b8bb">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="telephoneClientField" focusColor="#4864b9" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="25.0" prefWidth="400.0" promptText="Téléphone client" unFocusColor="#b7b8bb">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="adressClientField" focusColor="#4864b9" labelFloat="true" maxWidth="400.0" minWidth="400.0" prefHeight="33.0" prefWidth="400.0" promptText="Adresse Client " unFocusColor="#b7b8bb">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <HBox prefHeight="33.0" prefWidth="505.0">
+               <children>
+                  <JFXButton fx:id="enregister" buttonType="RAISED" onAction="#addClient" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #4864b9;" text="Enregistrer" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="reset" buttonType="RAISED" onAction="#resetClient" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #4864b9;" text="Reset" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="annuler" buttonType="RAISED" onAction="#makeRetour" prefWidth="100.0" ripplerFill="WHITE" style="-fx-background-color: #4864b9;" text="Annuler" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets left="80.0" top="100.0" />
+               </VBox.margin>
+            </HBox>
+            <Label text="* Champ Obligatoire" textFill="#b7b8bb">
+               <VBox.margin>
+                  <Insets left="380.0" top="100.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <Pane fx:id="panCreation" layoutX="7.0" layoutY="10.0" prefHeight="72.0" prefWidth="659.0" />
+   </children>
+</AnchorPane>

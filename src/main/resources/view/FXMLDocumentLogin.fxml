@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetPharmV2.controller.FXMLDocumentLoginController">
+	<children>
+		<Pane layoutY="-1.0" prefHeight="446.0" prefWidth="636.0" style="-fx-background-color: #ffffff;">
+			<children>
+				<JFXTextField fx:id="user" focusColor="#4864b9" labelFloat="true" layoutX="112.0" layoutY="141.0" prefHeight="35.0" prefWidth="380.0" promptText="Nom utilisateur*" unFocusColor="#b7b8bb">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</JFXTextField>
+				<JFXPasswordField fx:id="password" focusColor="#4864b9" labelFloat="true" layoutX="114.0" layoutY="201.0" prefHeight="35.0" prefWidth="380.0" promptText="Mot de passe*" unFocusColor="#b7b8bb">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</JFXPasswordField>
+				<JFXButton fx:id="login" buttonType="RAISED" layoutX="114.0" layoutY="284.0" onAction="#makeLogin" prefHeight="51.0" prefWidth="181.0" ripplerFill="WHITE" style="-fx-background-color: #4864b9;" text="Connexion" textFill="WHITE">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</JFXButton>
+				<JFXButton fx:id="signUp" buttonType="RAISED" layoutX="313.0" layoutY="284.0" onAction="#inscription" prefHeight="51.0" prefWidth="181.0" ripplerFill="WHITE" style="-fx-background-color: #4864b9;" text="Inscription" textFill="WHITE">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</JFXButton>
+				<Text fill="#4864b9" layoutX="230.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Connexion">
+					<font>
+						<Font size="29.0" />
+					</font>
+				</Text>
+				<Separator layoutX="99.0" layoutY="116.0" prefHeight="0.0" prefWidth="429.0" />
+				<Label layoutX="466.0" layoutY="374.0" text="* Champ Obligatoire" textFill="#b7b8bb" />
+            <ImageView fitHeight="67.0" fitWidth="83.0" layoutX="138.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="44.0" fitWidth="33.0" layoutX="57.0" layoutY="199.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/passwordWin10.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="57.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/loginwin10.png" />
+               </image>
+            </ImageView>
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

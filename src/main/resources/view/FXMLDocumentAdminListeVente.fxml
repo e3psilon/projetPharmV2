@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="com.projetPharmV2.controller.FXMLDocumentAdminVente">
+   <children>
+      <Pane layoutY="291.0" prefHeight="319.0" prefWidth="1069.0">
+         <children>
+            <HBox layoutX="86.0" layoutY="262.0" prefHeight="32.0" prefWidth="887.0">
+               <children>
+                  <JFXButton fx:id="editVente" buttonType="RAISED" onAction="#makeAddUser" prefWidth="250.0" ripplerFill="WHITE" style="-fx-background-color: #4864b9;" text="Editer" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="deleteVente" buttonType="RAISED" onAction="#makeDeleteVente" prefWidth="250.0" ripplerFill="WHITE" style="-fx-background-color: #4864b9;" text="Supprimer" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="makeUpdateVente" buttonType="RAISED" onAction="#makeUpdateVente" prefWidth="250.0" ripplerFill="WHITE" style="-fx-background-color: #4864b9;" text="Mettre a jour" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton fx:id="retour" buttonType="RAISED" onAction="#makeGetAllUser" prefWidth="250.0" ripplerFill="WHITE" style="-fx-background-color: #4864b9;" text="retour" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                  </JFXButton>
+               </children>
+            </HBox>
+            <TableView fx:id="tableUser" editable="true" layoutX="-11.0" layoutY="-2.0" onMouseClicked="#getAllUser" prefHeight="218.0" prefWidth="1079.0" style="-fx-border-color: #ffffff;">
+               <columns>
+                  <TableColumn fx:id="colIDVente" prefWidth="200.0" text="ID Vente" />
+                  <TableColumn fx:id="colNir" prefWidth="200.0" text="Numero de securité social" />
+                  <TableColumn fx:id="colDateVente" prefWidth="200.0" text="Date de vente" />
+                  <TableColumn fx:id="colNomVendeur" prefWidth="200.0" text="Nom vendeur" />
+                  <TableColumn fx:id="colPrenomVendeur" prefWidth="277.0" text="Prenom vendeur" />
+               </columns>
+            </TableView>
+         </children>
+      </Pane>
+      <Pane fx:id="panListerTableau" layoutY="-1.0" prefHeight="289.0" prefWidth="1059.0" />
+   </children>
+</AnchorPane>

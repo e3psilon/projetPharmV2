@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="moduleCreation" prefHeight="72.0" prefWidth="659.0" style="-fx-background-color: #4864b9;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetPharmV2.controller.FXMLDocumentModuleCreation">
+   <children>
+      <JFXButton fx:id="creatUtilisat" accessibleText="creationUtilisateur" layoutX="65.0" layoutY="36.0" onAction="#creatUtilisateur" prefHeight="35.0" prefWidth="155.0" style="-fx-background-color: #2e53b8;" text="Crée un utilisateur" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="creatClt" accessibleText="creationClient" layoutX="222.0" layoutY="36.0" onAction="#creatClient" prefHeight="35.0" prefWidth="155.0" style="-fx-background-color: #2e53b8;" text="Crée un client" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</Pane>

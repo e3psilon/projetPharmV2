@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="819.0" prefWidth="1307.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projetPharmV2.controller.FXMLDocumentMainAppController">
+   <children>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="200.0" layoutX="14.0" layoutY="5.0" onMouseEntered="#showDrawer" onMouseExited="#hideDrawer" prefHeight="600.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <StackPane layoutX="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="360.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefWidth="874.0">
+               <children>
+                  <AnchorPane prefHeight="600.0" prefWidth="400.0">
+                     <children>
+                        <AnchorPane fx:id="anchorPane" layoutY="110.0" prefHeight="670.0" prefWidth="600.0" snapToPixel="false" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="110.0">
+                           <children>
+                              <ImageView fitHeight="300.0" fitWidth="600.0" layoutX="24.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../icon/symbole-de-la-pharmacie-3d.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                        <Label fx:id="panel" layoutX="14.0" layoutY="14.0" prefHeight="38.0" prefWidth="262.0" textFill="#43487c">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </HBox>
+         </children>
+      </StackPane>
+      <Label fx:id="labelName" layoutX="1044.0" layoutY="26.0" prefHeight="38.0" prefWidth="249.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <SplitMenuButton fx:id="splitMenuButton" layoutX="1076.0" layoutY="64.0" mnemonicParsing="false" text="Réglage">
+        <items>
+          <MenuItem fx:id="monCompte" mnemonicParsing="false" onAction="#monCompte" text="Mon compte" />
+          <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#logout" text="Déconnexion" />
+
+                    </items>
+         <font>
+            <Font size="15.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="34.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/settings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </SplitMenuButton>
+   </children>
+</AnchorPane>
